@@ -1,0 +1,19 @@
+package com.gargjayesh.learning.blockchain.exceptions;
+
+public class BlockNotFoundException extends BlockChainException {
+    public BlockNotFoundException() {
+        super();
+    }
+
+    public BlockNotFoundException(String message) {
+        super(message);
+    }
+
+    public BlockNotFoundException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public BlockNotFoundException(Throwable cause) {
+        super(cause);
+    }
+}

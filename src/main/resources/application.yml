@@ -1,0 +1,11 @@
+blockchain:
+  hashAlgo: 'SHA-512'
+
+logging.level:
+  root: error
+  com.gargjayesh: debug
+
+spring:
+  h2.console:
+    enabled: true
+    path: /console
