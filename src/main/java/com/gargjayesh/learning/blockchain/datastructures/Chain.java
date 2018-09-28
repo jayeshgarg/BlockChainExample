@@ -73,6 +73,7 @@ public final class Chain {
                         result = false;
                         break;
                     }
+                    ctr++;
                 }
             }
         }

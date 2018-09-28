@@ -16,7 +16,7 @@ public final class HashUtil {
     public static String calculateHash(String previousId, String dataType, Data data, long timeStamp, int nonce) {
         try {
             MessageDigest digester = MessageDigest.getInstance("SHA-256");
-            String messageToBeDigested = previousId + dataType + Hex.encode(data.toString().getBytes()) + timeStamp + nonce;
+            String messageToBeDigested = previousId + dataType + data.toString() + timeStamp + nonce;
             return new String(Hex.encode(digester.digest(messageToBeDigested.getBytes())));
         } catch (NoSuchAlgorithmException e) {
             log.error("Invalid hashing algorithm selected.", e);

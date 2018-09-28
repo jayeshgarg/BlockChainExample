@@ -57,6 +57,9 @@ public class CLIRunner implements CommandLineRunner {
         receivedBlock = chain.getExistingBlock(myBlock);
         log.debug("Received block data is...");
         printBlockData(receivedBlock);
+
+        log.debug("Terminating application now...");
+        System.exit(0);
     }
 
     private void printBlockData(Block block) {
